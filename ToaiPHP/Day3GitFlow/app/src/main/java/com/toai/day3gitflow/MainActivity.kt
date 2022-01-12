@@ -9,7 +9,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun Fibonacci(n : Int, flag: Boolean) {
-
+    fun Fibonacci(n : Int, flag: Boolean) : Int {
+        if(!flag) {
+            var a1 = 1
+            var a2 = 1
+            if(n == 1 || n == 2) return 1;
+            var a = 0
+            for(i in 3..n) {
+                a = a1+a2
+                a1 = a2
+                a2 = a
+            }
+            return a;
+        }
+        return 0
     }
 }
