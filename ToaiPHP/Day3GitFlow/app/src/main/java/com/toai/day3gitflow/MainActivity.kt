@@ -10,10 +10,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Fibonacci(n : Int, flag: Boolean) : Int {
-        if(flag) {
+
+        if(!flag) {
+            var a1 = 1
+            var a2 = 1
+            if(n == 1 || n == 2) return 1;
+            var a = 0
+            for(i in 3..n) {
+                a = a1+a2
+                a1 = a2
+                a2 = a
+            }
+            return a;
+        }
+
+        else {
             if(n == 1 || n == 2) return 1;
             return Fibonacci(n-1, true) + Fibonacci(n-2, true);
         }
-        return 0;
+
     }
 }
