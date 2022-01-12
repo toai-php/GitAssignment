@@ -16,4 +16,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Xin chào", Toast.LENGTH_SHORT).show()
         }
     }
+
+    // issue 2
 }
