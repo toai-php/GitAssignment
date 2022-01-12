@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Fibonacci(n : Int, flag: Boolean) : Int {
+
         if(!flag) {
             var a1 = 1
             var a2 = 1
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
             }
             return a;
         }
-        return 0
+
+        else {
+            if(n == 1 || n == 2) return 1;
+            return Fibonacci(n-1, true) + Fibonacci(n-2, true);
+        }
+
     }
 }
