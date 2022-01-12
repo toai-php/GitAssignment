@@ -18,4 +18,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     // issue 2
+
+    // issue 3
 }
