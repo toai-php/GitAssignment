@@ -1,0 +1,3 @@
+[submodule "SubModule"]
+	path = SubModule
+	url = https://github.com/toai-php/GitAssignment.git
